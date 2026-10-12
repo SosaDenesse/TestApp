@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Capitalize Text</title>
+</head>
+<body>
+<h1>Enter text to capitalize</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="text">
+    <button type="submit">Capitalize</button>
+</form>
+<h2>Result:</h2>
+<p>{{ capitalized_text }}</p>
+</body>
+</html>
